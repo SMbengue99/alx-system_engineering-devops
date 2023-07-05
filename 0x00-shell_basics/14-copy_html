@@ -1,2 +1,8 @@
 #!/bin/bash
-for file in *.html do cp -n "$file" ../"$file" done
+for file in *.html
+do
+    if [ ! -e 0x00-shell_basics/"$file" ] || [ "$file" -nt 0x00-shell_basics/"$file" ] 
+    then
+        cp -n "$file" /tmp/"$file"
+    fi
+done
