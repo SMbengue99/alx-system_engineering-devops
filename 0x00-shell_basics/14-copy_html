@@ -1,3 +1,2 @@
 #!/bin/bash
-cp -u *.html ../
-ls -l *.html /tmp/*.html
+cp -u *.html ../ ls -l *.html /tmp/*.html
