@@ -1,2 +1,2 @@
-#!/bin/bash 
-SUM=$(($WATER_VAL + $STIR_VAL)) | echo $SUM
+#!/bin/bash
+SUM=$(($WATER_VAL + $STIR_VAL)) | echo $(echo "obase=bestchol" $SUM | bc)
